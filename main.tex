@@ -1,0 +1,41 @@
+\documentclass{thesis}
+
+%------------------------------------------------------------------------------
+\title{The Title of Your Thesis, Nothing More}
+\author{Your Name}
+\date{} % Activate to display a given date or no date
+%------------------------------------------------------------------------------
+
+\begin{document}
+
+\frontmatter
+\input{front_matter/main.tex}
+
+% %%%%%%%%%%%%%%%%%%%
+% CHAPTER 1 - INTRODUCTION
+\mainmatter
+\subunit{chapter_1/ch1.tex}
+
+% %%%%%%%%%%%%%%%%%%%
+% Chapter 2 - manuscript-style chapter
+\subunit{chapter_2/ch2.tex}
+
+% %%%%%%%%%%%%%%%%%%%
+% Chapter 3 - manuscript-style chapter
+\subunit{chapter_3/ch3.tex}
+
+% %%%%%%%%%%%%%%%%%%%
+% Chapter 4 - manuscript-style chapter
+\subunit{chapter_4/ch4.tex}
+
+% %%%%%%%%%%%%%%%%%%%
+% Chapter 5 - Concluding Remarks
+\subunit{chapter_5/ch5.tex}
+
+% appendices (supplementary information for chapters 2-4)
+\appendix
+\subunit{chapter_2_sup/ch2_sup.tex}
+\subunit{chapter_3sup/ch3_sup.tex}
+\subunit{chapter_4sup/ch4_sup.tex}
+\input{cv.tex}
+\end{document}

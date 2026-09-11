@@ -1,0 +1,23 @@
+% Chapter-2-specific helper macros. Keep macros used only by this
+% chapter's supplement here rather than in thesis.cls.
+
+% Example: labelled multi-panel subfigures, e.g.
+%   \subpanel{0.45\linewidth}{\placeholderfigure{\linewidth}{3cm}}{Panel title}{fig:my-panel}
+\newcommand{\panelcaption}[2]{
+  \centering
+  \ifx&#1&%
+  \else
+  \textbf{#1}\\[1ex]
+  \fi
+  \captionsetup{labelformat=empty, skip=-10pt}
+  \caption{}
+  \label{#2}
+}
+
+\newcommand{\subpanel}[4]{
+  % #1: width of subfigure, #2: content, #3: panel title, #4: label
+  \begin{subfigure}[t]{#1}
+    \panelcaption{#3}{#4}
+    #2
+  \end{subfigure}
+}

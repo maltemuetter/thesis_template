@@ -1,0 +1,59 @@
+\chapter*{Curriculum Vitae}
+\addcontentsline{toc}{chapter}{Curriculum Vitae}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{1.2em}%
+  {\small #1}\par
+}
+
+\newcommand{\cventryloc}[3]{%
+  \noindent
+  \begin{minipage}[t]{0.2\textwidth}
+    \raggedright\small #1
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.8\textwidth}
+    \small
+    \textbf{#2}\par
+    #3
+  \end{minipage}\par
+}
+
+% --- PERSONAL DATA ---
+{\small \textbf{Your Name}, born 1 January 1990 in Your City, Your Country}
+
+% --- EDUCATION ---
+\cvsection{Education}
+
+\cventryloc{2020 -- 2026}{PhD Candidate, Your Group (Your Institution)}{%
+  Thesis: \textit{The Title of Your Thesis, Nothing More}.%
+}
+
+\cventryloc{2017 -- 2020}{Master of Science, Your Field (Your University)}{%
+  Thesis: \textit{Your Master's Thesis Title}.%
+}
+
+\cventryloc{2012 -- 2017}{Bachelor of Science, Your Field (Your University)}{%
+  Thesis: \textit{Your Bachelor's Thesis Title}.%
+}
+
+% --- EMPLOYMENT ---
+\cvsection{Employment}
+
+\cventryloc{2020 -- Present}{Doctoral Researcher, Your Group (Your Institution)}{%
+  Teaching assistant in \textit{Course Name} and \textit{Another Course Name}.%
+}
+
+\cventryloc{2017 -- 2019}{Research Assistant, Some Group (Some Institution)}{%
+  Short description of your role.%
+}
+
+% --- REVIEWING ---
+\cvsection{Reviewing}
+{\small Reviewed manuscripts for Journal Name.}
+
+% --- PUBLICATIONS ---
+\cvsection{Publications}
+\begin{refsection}[bibliographies/template.bib]
+  \nocite{Author2026a, Author2026b}
+  \printbibliography[heading=none,env=compactbib]
+\end{refsection}

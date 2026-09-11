@@ -1,0 +1,41 @@
+% !TEX root = ../main.tex
+
+\documentclass[../main.tex]{subfiles}
+
+% Paper-specific metadata
+\title{Placeholder Manuscript Title for Chapter Three}
+\manuscriptauthors{Your Name\textsuperscript{a}, Coauthor First\textsuperscript{a}}
+\affil{a}{Your Institute, Your Department, Your University, City, Country}
+
+\manuscriptpublished{This manuscript was published by \textit{Journal Name} on Month Day, Year (doi: 10.0000/placeholder).}
+
+\authorcontributions{%
+  [Placeholder author contribution statement.]
+}
+
+\manuscriptabstract{
+  [Placeholder abstract for Chapter 3. This example shows an alternative
+  layout where section headings live in \texttt{ch3.tex} and each section's
+  body text is a separate subfile -- as opposed to Chapter 2, where each
+  subfile defines its own \texttt{\textbackslash section}. Either pattern
+  works; pick whichever keeps your files easiest to navigate.]
+}
+
+\begin{document}
+\manuscriptfront
+
+\section{Introduction}
+\input{chapter_3/11_introduction.tex}
+\section{Results}
+\input{chapter_3/12_results.tex}
+\section{Discussion}
+\input{chapter_3/13_discussion.tex}
+\section{Methods}
+\input{chapter_3/14_methods.tex}
+
+\section*{Data, Materials, and Software Availability}
+[Placeholder: link to your data/code repository, e.g. Zenodo DOI.]
+
+\section*{Acknowledgements}
+[Placeholder acknowledgements for this manuscript.]
+\end{document}

@@ -1,0 +1,28 @@
+{
+    // put the build directory beside each root .tex file
+    "latex-workshop.latex.outDir": "%DIR%/build",
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatexmk",
+            "command": "latexmk",
+            "args": [
+                "-xelatex",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-outdir=%DIR%/build", // <- same rule as above
+                "%DOC%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "Build with XeLaTeX",
+            "tools": [
+                "xelatexmk"
+            ]
+        }
+    ],
+    "latex-workshop.latex.autoBuild.run": "onFileChange",
+    "latex-workshop.view.pdf.viewer": "tab"
+}

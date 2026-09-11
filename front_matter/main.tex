@@ -1,0 +1,33 @@
+% !TEX root = ../main.tex
+
+% The original thesis renders 0_titlepage.tex separately (compile it on its
+% own, export that one page as a PDF) and pulls it in here with
+% \includepdf{front_matter/titlepage.pdf} -- useful if your title page needs
+% a different layout pass (e.g. no headers/footers) than the rest of the
+% front matter. This template skips that extra step and just \input's it
+% directly, which is simpler and compiles in one pass.
+\input{front_matter/0_titlepage.tex}
+
+\chapter*{Summary\markboth{SUMMARY}{}}
+\begin{summaryspacing}
+  \input{front_matter/1a_Summary_EN}
+\end{summaryspacing}
+
+\chapter*{Zusammenfassung\markboth{ZUSAMMENFASSUNG}{}}\label{cha:summary}
+\begin{summaryspacing}
+  \input{front_matter/1b_Summary_DE}
+\end{summaryspacing}
+
+\begin{summaryspacing}
+  \tableofcontents*
+\end{summaryspacing}
+
+\begin{summaryspacing}
+  \input{acknowledgements.tex}
+\end{summaryspacing}
+
+\begin{summaryspacing}
+  \chapter*{Declaration on the Use of AI\markboth{DECLARATION ON THE USE OF AI}{}}
+  [Optional: state here which chapters, if any, were proofread or assisted by
+  an AI tool, and for what purpose (e.g., grammar and wording checks).]
+\end{summaryspacing}
