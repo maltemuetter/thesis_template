@@ -118,3 +118,7 @@ journal-driven workflow, so it isn't reproduced here — if you need it, the
 technique is just: compile the external document once to get its `.aux`
 file, then `\usepackage{xr}` + `\externaldocument{path/to/that/.aux}` in the
 document that needs to reference its labels.
+
+## License
+
+MIT, see `LICENSE`.
